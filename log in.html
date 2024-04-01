@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="root">
+    <div class="allforms">
+      <form action="home.html" method="post" onsubmit="validate()">
+        <h2>Welcome back</h2>
+        <input class="userip" type="text" placeholder="Username" />
+        <div class="pswd">
+          <input
+            class="userip"
+            id="pwd"
+            type="password"
+            placeholder="Password"
+          />
+          <span id="showPwd" onclick="showPwd()">
+            <i class="fas passToggle fa-eye-slash" id="eye"></i>
+          </span>
+        </div>
+        <button class="btn"><a href="home.html">Log in</a></button>
+        <p>Don't have an account?<a href="sign up.html"> Sign up </a></p>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body class="root">
+    <div class="allforms">
+      <form action="home.html" method="post" onclick="validate()">
+        <h2>Create your account</h2>
+        <input class="userip" type="email" placeholder="Email or Phone" />
+        <div class="pswd">
+          <input
+            class="userip"
+            id="pwd"
+            type="password"
+            placeholder="Password"
+          />
+          <span id="showPwd" onclick="showPwd()">
+            <i class="fas passToggle fa-eye-slash" id="eye"></i>
+          </span>
+        </div>
+        <button class="btn"><a href="home.html">Sign up</a></button>
+        <p>Don't have an Account?<a href="log in.html"> Log in </a></p>
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
